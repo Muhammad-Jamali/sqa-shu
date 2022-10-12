@@ -1,0 +1,78 @@
+Xpath Cheat Sheet
+
+https://devhints.io/xpath
+
+nodename	Selects all nodes with the name "nodename"
+/	Selects from the root node
+//	Selects nodes in the document from the current node that match the selection no matter where they are
+.	Selects the current node
+..	Selects the parent of the current node
+@	Selects attributes
+*   Any node/element
+
+-------------------------------------------------------------
+
+Attribute Selectors
+---------------------
+
+//input #select any input no matter where they are
+//body//input #select any input inside body
+//*[@id="email"]  #Select any element with ID email
+//*[@name="email"] #Select any element with attribute name email
+//*[@class="form-group"] #Select any element of class form-group
+//button[@type="submit"] #Select element button with attribute type submit
+//a[starts-with(@href, '/')] #select a whose href attribute starts with /
+//a[ends-with(@href, '.pdf')] #select a whose href attribute ends with .pdf
+//a[contains(text(), 'Accounts')] #select a whose text contains
+
+Order selectors
+---------------
+//ul/li[1] #first element of any ul element
+//ul/li[2] #second element of any ul element
+//ul/li[last()] #last element of any ul element
+//*[1][name()="a"] #first child of any element whose name is a
+//*[last()][name()="a"] #last child of any element whose name is a
+
+----------------------
+//a[not(@id)] #select all a that has not id attribute
+//button[text()="Submit Loan Application"]
+//button[contains(text(),"Submit")]
+//ul[*] # select ul that has children
+//ul[li] # select ul that has specific children li
+//a[@class] #select a that has class attribute
+//a[@name] #select a that has name attribute
+//a[@name or @class] #select a that has name attribute or class attribute
+//a | //div #union (join results)
+
+---------------------------------------
+//ul/li/..  #select parent of li
+//a/@href   #select with href attributes
+//span/text()  #select span that has text
+
+----------------------------------------
+
+//input[@name="email"][@id="email"]  #chaining
+//div[@id="head" and position()=2]
+//ul[count(li) > 2]
+//ul[count(li[@class='hide']) > 0]
+
+-------------------------------------
+
+//*                 # all elements
+count(//*)          # count all elements
+(//h1)[1]/text()    # text of the first h1 heading
+//li[span]          # find a <li> with an <span> inside it
+                    # ...expands to //li[child::span]
+//ul/li/..          # use .. to select a parent
+
+
+
+
+
+
+
+
+
+
+
+
