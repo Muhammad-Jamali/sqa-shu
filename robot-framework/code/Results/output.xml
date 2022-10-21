@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221019 19:39:52.846" rpa="false" schemaversion="3">
-<suite id="s1" name="TC007 Timeout" source="d:\salim-habib-university\software-quality-assurance\robot-framework\code\TestCases\TC007_Timeout.robot">
-<test id="s1-t1" name="TC_007 Timeout Test" line="9">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221019 19:39:53.497" rpa="false" schemaversion="3">
+<suite id="s1" name="Code" source="D:\salim-habib-university\software-quality-assurance\robot-framework\code">
+<suite id="s1-s1" name="TestCases" source="D:\salim-habib-university\software-quality-assurance\robot-framework\code\TestCases">
+<suite id="s1-s1-s1" name="TC007 Timeout" source="D:\salim-habib-university\software-quality-assurance\robot-framework\code\TestCases\TC007_Timeout.robot">
+<test id="s1-s1-s1-t1" name="TC_007 Timeout Test" line="9">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${Broswer}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221019 19:39:53.349" level="INFO">Opening browser 'Chrome' to base url 'https://uibank.uipath.com/loans/apply'.</msg>
-<msg timestamp="20221019 19:39:59.998" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+<msg timestamp="20221019 19:39:53.950" level="INFO">Opening browser 'Chrome' to base url 'https://uibank.uipath.com/loans/apply'.</msg>
+<msg timestamp="20221019 19:39:59.472" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
   (Session info: chrome=106.0.5249.119)
 Stacktrace:
 Backtrace:
@@ -35,7 +37,7 @@ Backtrace:
 	RtlGetFullPathName_UEx [0x77A58FD2+1218]
 	RtlGetFullPathName_UEx [0x77A58F9D+1165]
 </msg>
-<msg timestamp="20221019 19:40:00.001" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+<msg timestamp="20221019 19:39:59.475" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
 from disconnected: received Inspector.detached event
   (Session info: chrome=106.0.5249.119)
 Stacktrace:
@@ -74,69 +76,69 @@ Backtrace:
 	RtlGetFullPathName_UEx [0x77A58FD2+1218]
 	RtlGetFullPathName_UEx [0x77A58F9D+1165]
 </msg>
-<status status="FAIL" starttime="20221019 19:39:53.349" endtime="20221019 19:40:00.005"/>
+<status status="FAIL" starttime="20221019 19:39:53.949" endtime="20221019 19:39:59.509"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.006" endtime="20221019 19:40:00.006"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.510" endtime="20221019 19:39:59.510"/>
 </kw>
 <kw name="Get Selenium Timeout" library="SeleniumLibrary">
 <var>${default_timeout}</var>
 <doc>Gets the timeout that is used by various keywords.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.006" endtime="20221019 19:40:00.006"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.511" endtime="20221019 19:39:59.511"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${default_timeout}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.007" endtime="20221019 19:40:00.007"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.513" endtime="20221019 19:39:59.513"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>20 seconds</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.008" endtime="20221019 19:40:00.008"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.514" endtime="20221019 19:39:59.515"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>xpath:/html/body/app-root/body/div/app-loan-application/div/div[2]/form/div[1]/label</arg>
 <arg>Email Address of Requester</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.009" endtime="20221019 19:40:00.009"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.515" endtime="20221019 19:39:59.516"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://*[@id="email"]</arg>
 <arg>gulraizgulshan@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.013" endtime="20221019 19:40:00.013"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.516" endtime="20221019 19:39:59.516"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://*[@id="amount"]</arg>
 <arg>25000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.014" endtime="20221019 19:40:00.015"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.517" endtime="20221019 19:39:59.517"/>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>xpath://*[@id="term"]</arg>
 <arg>1</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.016" endtime="20221019 19:40:00.017"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.518" endtime="20221019 19:39:59.518"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="income"]</arg>
 <arg>60000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.018" endtime="20221019 19:40:00.018"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.519" endtime="20221019 19:39:59.520"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="age"]</arg>
 <arg>31</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.019" endtime="20221019 19:40:00.019"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.520" endtime="20221019 19:39:59.521"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221019 19:40:00.020" endtime="20221019 19:40:00.021"/>
+<status status="NOT RUN" starttime="20221019 19:39:59.521" endtime="20221019 19:39:59.521"/>
 </kw>
-<status status="FAIL" starttime="20221019 19:39:53.347" endtime="20221019 19:40:00.023">WebDriverException: Message: unknown error: cannot determine loading status
+<status status="FAIL" starttime="20221019 19:39:53.945" endtime="20221019 19:39:59.523">WebDriverException: Message: unknown error: cannot determine loading status
 from disconnected: received Inspector.detached event
   (Session info: chrome=106.0.5249.119)
 Stacktrace:
@@ -176,7 +178,11 @@ Backtrace:
 	RtlGetFullPathName_UEx [0x77A58F9D+1165]
 </status>
 </test>
-<status status="FAIL" starttime="20221019 19:39:52.859" endtime="20221019 19:40:00.028"/>
+<status status="FAIL" starttime="20221019 19:39:53.559" endtime="20221019 19:39:59.526"/>
+</suite>
+<status status="FAIL" starttime="20221019 19:39:53.554" endtime="20221019 19:39:59.531"/>
+</suite>
+<status status="FAIL" starttime="20221019 19:39:53.508" endtime="20221019 19:39:59.535"/>
 </suite>
 <statistics>
 <total>
@@ -185,11 +191,13 @@ Backtrace:
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="TC007 Timeout">TC007 Timeout</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Code">Code</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">Code.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TC007 Timeout">Code.TestCases.TC007 Timeout</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221019 19:39:59.998" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+<msg timestamp="20221019 19:39:59.472" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
   (Session info: chrome=106.0.5249.119)
 Stacktrace:
 Backtrace:

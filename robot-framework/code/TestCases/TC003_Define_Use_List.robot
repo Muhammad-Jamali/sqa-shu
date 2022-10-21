@@ -9,5 +9,5 @@ TC_003 List Test
     Log To Console  ${List_Length}
     ${List_Data}  Get From List  ${List1}  1
     Log To Console  ${List_Data}
-   
+
 
