@@ -51,7 +51,7 @@ TC02 Check the availability of form fields
     Page Should Contain    Username
     Page Should Contain    Email address
     Page Should Contain    Password
-    Log To Console    The page contains 12 input fields
+    #Log To Console    The page contains 12 input fields
 
 TC03 Check for the Placeholder of different form fields
 

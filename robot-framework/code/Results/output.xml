@@ -1,229 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221019 19:39:53.497" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221028 11:15:19.091" rpa="false" schemaversion="3">
 <suite id="s1" name="Code" source="D:\salim-habib-university\software-quality-assurance\robot-framework\code">
 <suite id="s1-s1" name="TestCases" source="D:\salim-habib-university\software-quality-assurance\robot-framework\code\TestCases">
-<suite id="s1-s1-s1" name="TC007 Timeout" source="D:\salim-habib-university\software-quality-assurance\robot-framework\code\TestCases\TC007_Timeout.robot">
-<test id="s1-s1-s1-t1" name="TC_007 Timeout Test" line="9">
+<suite id="s1-s1-s1" name="Mid" source="D:\salim-habib-university\software-quality-assurance\robot-framework\code\TestCases\mid.robot">
+<test id="s1-s1-s1-t1" name="TC006 Check the Employment Status Field" line="69">
+<kw name="Open UiBank Browser" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Broswer}</arg>
+<arg>https://uibank.uipath.com/register-account</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221019 19:39:53.950" level="INFO">Opening browser 'Chrome' to base url 'https://uibank.uipath.com/loans/apply'.</msg>
-<msg timestamp="20221019 19:39:59.472" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
-  (Session info: chrome=106.0.5249.119)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00A7DF13+2219795]
-	Ordinal0 [0x00A12841+1779777]
-	Ordinal0 [0x00924100+803072]
-	Ordinal0 [0x00919BF2+760818]
-	Ordinal0 [0x0090CD35+707893]
-	Ordinal0 [0x00911122+725282]
-	Ordinal0 [0x00915699+743065]
-	Ordinal0 [0x00925610+808464]
-	Ordinal0 [0x0097E93A+1173818]
-	Ordinal0 [0x0096E616+1107478]
-	Ordinal0 [0x00947F89+950153]
-	Ordinal0 [0x00948F56+954198]
-	GetHandleVerifier [0x00D72CB2+3040210]
-	GetHandleVerifier [0x00D62BB4+2974420]
-	GetHandleVerifier [0x00B16A0A+565546]
-	GetHandleVerifier [0x00B15680+560544]
-	Ordinal0 [0x00A19A5C+1808988]
-	Ordinal0 [0x00A1E3A8+1827752]
-	Ordinal0 [0x00A1E495+1827989]
-	Ordinal0 [0x00A280A4+1867940]
-	BaseThreadInitThunk [0x76426739+25]
-	RtlGetFullPathName_UEx [0x77A58FD2+1218]
-	RtlGetFullPathName_UEx [0x77A58F9D+1165]
-</msg>
-<msg timestamp="20221019 19:39:59.475" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=106.0.5249.119)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00A7DF13+2219795]
-	Ordinal0 [0x00A12841+1779777]
-	Ordinal0 [0x0092423D+803389]
-	Ordinal0 [0x00917DF8+753144]
-	Ordinal0 [0x00917AF6+752374]
-	Ordinal0 [0x0091706A+749674]
-	Ordinal0 [0x00915F94+745364]
-	Ordinal0 [0x00916528+746792]
-	Ordinal0 [0x009206F5+788213]
-	Ordinal0 [0x009178FD+751869]
-	Ordinal0 [0x0091853F+755007]
-	Ordinal0 [0x00917B11+752401]
-	Ordinal0 [0x0091706A+749674]
-	Ordinal0 [0x00915F94+745364]
-	Ordinal0 [0x009163FD+746493]
-	Ordinal0 [0x00925A8E+809614]
-	Ordinal0 [0x0097F87D+1177725]
-	Ordinal0 [0x0096E7FC+1107964]
-	Ordinal0 [0x0097F192+1175954]
-	Ordinal0 [0x0096E616+1107478]
-	Ordinal0 [0x00947F89+950153]
-	Ordinal0 [0x00948F56+954198]
-	GetHandleVerifier [0x00D72CB2+3040210]
-	GetHandleVerifier [0x00D62BB4+2974420]
-	GetHandleVerifier [0x00B16A0A+565546]
-	GetHandleVerifier [0x00B15680+560544]
-	Ordinal0 [0x00A19A5C+1808988]
-	Ordinal0 [0x00A1E3A8+1827752]
-	Ordinal0 [0x00A1E495+1827989]
-	Ordinal0 [0x00A280A4+1867940]
-	BaseThreadInitThunk [0x76426739+25]
-	RtlGetFullPathName_UEx [0x77A58FD2+1218]
-	RtlGetFullPathName_UEx [0x77A58F9D+1165]
-</msg>
-<status status="FAIL" starttime="20221019 19:39:53.949" endtime="20221019 19:39:59.509"/>
+<msg timestamp="20221028 11:15:19.528" level="INFO">Opening browser 'chrome' to base url 'https://uibank.uipath.com/register-account'.</msg>
+<status status="PASS" starttime="20221028 11:15:19.527" endtime="20221028 11:15:25.165"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.510" endtime="20221019 19:39:59.510"/>
+<status status="PASS" starttime="20221028 11:15:19.525" endtime="20221028 11:15:25.165"/>
 </kw>
-<kw name="Get Selenium Timeout" library="SeleniumLibrary">
-<var>${default_timeout}</var>
-<doc>Gets the timeout that is used by various keywords.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.511" endtime="20221019 19:39:59.511"/>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${EmploymentStatusElement}</var>
+<arg>${EmploymentStatus}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20221028 11:15:25.186" level="INFO">${EmploymentStatusElement} = &lt;selenium.webdriver.remote.webelement.WebElement (session="a0e1cd80b739e3c2b0f56174e7a8c7e1", element="a9424554-2faf-4063-8684-df89a945551e")&gt;</msg>
+<status status="PASS" starttime="20221028 11:15:25.166" endtime="20221028 11:15:25.188"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${default_timeout}</arg>
+<arg>${EmploymentStatusElement.tag_name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.513" endtime="20221019 19:39:59.513"/>
+<status status="PASS" starttime="20221028 11:15:25.190" endtime="20221028 11:15:25.198"/>
 </kw>
-<kw name="Set Selenium Timeout" library="SeleniumLibrary">
-<arg>20 seconds</arg>
-<doc>Sets the timeout that is used by various keywords.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.514" endtime="20221019 19:39:59.515"/>
+<kw name="Close UiBank Bank Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 11:15:25.200" endtime="20221028 11:15:27.458"/>
 </kw>
-<kw name="Wait Until Element Contains" library="SeleniumLibrary">
-<arg>xpath:/html/body/app-root/body/div/app-loan-application/div/div[2]/form/div[1]/label</arg>
-<arg>Email Address of Requester</arg>
-<doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.515" endtime="20221019 19:39:59.516"/>
+<status status="PASS" starttime="20221028 11:15:25.200" endtime="20221028 11:15:27.459"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://*[@id="email"]</arg>
-<arg>gulraizgulshan@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.516" endtime="20221019 19:39:59.516"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://*[@id="amount"]</arg>
-<arg>25000</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.517" endtime="20221019 19:39:59.517"/>
-</kw>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>xpath://*[@id="term"]</arg>
-<arg>1</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.518" endtime="20221019 19:39:59.518"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>//*[@id="income"]</arg>
-<arg>60000</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.519" endtime="20221019 19:39:59.520"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>//*[@id="age"]</arg>
-<arg>31</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.520" endtime="20221019 19:39:59.521"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221019 19:39:59.521" endtime="20221019 19:39:59.521"/>
-</kw>
-<status status="FAIL" starttime="20221019 19:39:53.945" endtime="20221019 19:39:59.523">WebDriverException: Message: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=106.0.5249.119)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00A7DF13+2219795]
-	Ordinal0 [0x00A12841+1779777]
-	Ordinal0 [0x0092423D+803389]
-	Ordinal0 [0x00917DF8+753144]
-	Ordinal0 [0x00917AF6+752374]
-	Ordinal0 [0x0091706A+749674]
-	Ordinal0 [0x00915F94+745364]
-	Ordinal0 [0x00916528+746792]
-	Ordinal0 [0x009206F5+788213]
-	Ordinal0 [0x009178FD+751869]
-	Ordinal0 [0x0091853F+755007]
-	Ordinal0 [0x00917B11+752401]
-	Ordinal0 [0x0091706A+749674]
-	Ordinal0 [0x00915F94+745364]
-	Ordinal0 [0x009163FD+746493]
-	Ordinal0 [0x00925A8E+809614]
-	Ordinal0 [0x0097F87D+1177725]
-	Ordinal0 [0x0096E7FC+1107964]
-	Ordinal0 [0x0097F192+1175954]
-	Ordinal0 [0x0096E616+1107478]
-	Ordinal0 [0x00947F89+950153]
-	Ordinal0 [0x00948F56+954198]
-	GetHandleVerifier [0x00D72CB2+3040210]
-	GetHandleVerifier [0x00D62BB4+2974420]
-	GetHandleVerifier [0x00B16A0A+565546]
-	GetHandleVerifier [0x00B15680+560544]
-	Ordinal0 [0x00A19A5C+1808988]
-	Ordinal0 [0x00A1E3A8+1827752]
-	Ordinal0 [0x00A1E495+1827989]
-	Ordinal0 [0x00A280A4+1867940]
-	BaseThreadInitThunk [0x76426739+25]
-	RtlGetFullPathName_UEx [0x77A58FD2+1218]
-	RtlGetFullPathName_UEx [0x77A58F9D+1165]
-</status>
+<status status="PASS" starttime="20221028 11:15:19.523" endtime="20221028 11:15:27.459"/>
 </test>
-<status status="FAIL" starttime="20221019 19:39:53.559" endtime="20221019 19:39:59.526"/>
+<status status="PASS" starttime="20221028 11:15:19.146" endtime="20221028 11:15:27.462"/>
 </suite>
-<status status="FAIL" starttime="20221019 19:39:53.554" endtime="20221019 19:39:59.531"/>
+<status status="PASS" starttime="20221028 11:15:19.140" endtime="20221028 11:15:27.464"/>
 </suite>
-<status status="FAIL" starttime="20221019 19:39:53.508" endtime="20221019 19:39:59.535"/>
+<status status="PASS" starttime="20221028 11:15:19.097" endtime="20221028 11:15:27.468"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Code">Code</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">Code.TestCases</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TC007 Timeout">Code.TestCases.TC007 Timeout</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Code">Code</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TestCases">Code.TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Mid">Code.TestCases.Mid</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221019 19:39:59.472" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
-  (Session info: chrome=106.0.5249.119)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00A7DF13+2219795]
-	Ordinal0 [0x00A12841+1779777]
-	Ordinal0 [0x00924100+803072]
-	Ordinal0 [0x00919BF2+760818]
-	Ordinal0 [0x0090CD35+707893]
-	Ordinal0 [0x00911122+725282]
-	Ordinal0 [0x00915699+743065]
-	Ordinal0 [0x00925610+808464]
-	Ordinal0 [0x0097E93A+1173818]
-	Ordinal0 [0x0096E616+1107478]
-	Ordinal0 [0x00947F89+950153]
-	Ordinal0 [0x00948F56+954198]
-	GetHandleVerifier [0x00D72CB2+3040210]
-	GetHandleVerifier [0x00D62BB4+2974420]
-	GetHandleVerifier [0x00B16A0A+565546]
-	GetHandleVerifier [0x00B15680+560544]
-	Ordinal0 [0x00A19A5C+1808988]
-	Ordinal0 [0x00A1E3A8+1827752]
-	Ordinal0 [0x00A1E495+1827989]
-	Ordinal0 [0x00A280A4+1867940]
-	BaseThreadInitThunk [0x76426739+25]
-	RtlGetFullPathName_UEx [0x77A58FD2+1218]
-	RtlGetFullPathName_UEx [0x77A58F9D+1165]
-</msg>
 </errors>
 </robot>
