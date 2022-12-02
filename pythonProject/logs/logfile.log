@@ -1,0 +1,4 @@
+2022-11-25 01:07:53,663 : INFO : This is first log
+2022-11-25 01:10:29,515 : INFO : this is again
+2022-11-25 01:11:11,649 : INFO : this is again
+2022-11-25 01:11:11,649 : ERROR : this is failure
