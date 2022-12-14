@@ -1,0 +1,5 @@
+2022-12-01 23:12:55,521 - test_signup.py:[16] - [INFO] - Test Do Sign up started
+2022-12-01 23:16:45,091 - test_carwale.py:[61] - [INFO] - ******Inside Car Names and Prices Test*********
+2022-12-01 23:16:54,853 - test_carwale.py:[61] - [INFO] - ******Inside Car Names and Prices Test*********
+2022-12-01 23:17:04,473 - test_carwale.py:[61] - [INFO] - ******Inside Car Names and Prices Test*********
+2022-12-01 23:17:21,724 - test_carwale.py:[61] - [INFO] - ******Inside Car Names and Prices Test*********
